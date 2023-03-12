@@ -114,11 +114,14 @@ input:checked ~ label .accordionItem__image,
     width: 90%;
   }
   * {
-    font-size: 1.08em;
+    font-size: 1.05em;
   }
   input:checked ~ label .accordionItem__image,
   .accordionItem:hover .accordionItem__image {
     width: 90%;
+  }
+  .accordionItem__arrow{
+    transform: scale(2.5);
   }
 }
 
@@ -127,11 +130,14 @@ input:checked ~ label .accordionItem__image,
     width: 100%;
   }
   * {
-    font-size: 0.98em;
+    font-size: 0.94em;
   }
   input:checked ~ label .accordionItem__image,
   .accordionItem:hover .accordionItem__image {
     width: 100%;
     padding: 0;
+  }
+  .accordionItem__arrow{
+    transform: scale(1);
   }
 }
