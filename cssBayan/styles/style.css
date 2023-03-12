@@ -114,14 +114,32 @@ input:checked ~ label .accordionItem__image,
     width: 90%;
   }
   * {
-    font-size: 1.05em;
+    font-size: 1.03em;
   }
   input:checked ~ label .accordionItem__image,
   .accordionItem:hover .accordionItem__image {
     width: 90%;
   }
-  .accordionItem__arrow{
-    transform: scale(2.5);
+  .accordionItem__arrow {
+    transform: scale(2.2);
+  }
+}
+@media (max-width: 700px) {
+  * {
+    font-size: 1em;
+  }
+}
+@media (max-width: 550px) {
+  * {
+    font-size: 0.96em;
+  }
+  .accordionItem__arrow {
+    transform: scale(1.5);
+  }
+}
+@media (max-width: 400px) {
+  * {
+    font-size: 0.95em;
   }
 }
 
@@ -137,7 +155,7 @@ input:checked ~ label .accordionItem__image,
     width: 100%;
     padding: 0;
   }
-  .accordionItem__arrow{
+  .accordionItem__arrow {
     transform: scale(1);
   }
 }
