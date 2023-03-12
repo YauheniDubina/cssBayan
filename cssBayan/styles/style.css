@@ -15,7 +15,7 @@ body {
 .container {
   align-self: center;
   justify-self: center;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   background-color: #bddef0;
   border-radius: 1em;
@@ -57,6 +57,7 @@ body {
 .accordionItem__title {
   color: rgba(0, 0, 0, 0.57);
   transition: all 1.5s;
+  font-size: 1.5em;
 }
 
 .accordionItem__arrow {
@@ -106,4 +107,31 @@ input:checked ~ label .accordionItem__image,
   opacity: 1;
   width: 50%;
   padding: 1em 0;
+}
+
+@media (max-width: 820px) {
+  .container {
+    width: 90%;
+  }
+  * {
+    font-size: 1.08em;
+  }
+  input:checked ~ label .accordionItem__image,
+  .accordionItem:hover .accordionItem__image {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  * {
+    font-size: 0.98em;
+  }
+  input:checked ~ label .accordionItem__image,
+  .accordionItem:hover .accordionItem__image {
+    width: 100%;
+    padding: 0;
+  }
 }
